@@ -1,0 +1,691 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>AmongUs</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>3a3b4ub64gjq0</unique-id>
+    <saved-with-version>27200</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+        <behavior author="Scirra" id="wrap" version="1">Wrap</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1280</width>
+        <height>720</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Cafeteria" sid="928748037766386">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\happy\Downloads\PC Computer - Among Us - The Skeld Cafeteria.png" />
+        </object-type>
+        <object-type name="TiledBackground2" sid="763346651282801">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="TiledBackground3" sid="256128185642180">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="colisor_cima_cafeteria" sid="525477243662015">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="710664803284587">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="278637932861642" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\happy\Downloads\Projeto AmongUs\colisor_cima_cafeteria.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.971095" y="1" />
+                            <point x="0.972996" y="0.719887" />
+                            <point x="0.731491" y="0.167046" />
+                            <point x="0.197768" y="0.161364" />
+                            <point x="0.0339756" y="0.534091" />
+                            <point x="0.0324543" y="1" />
+                            <point x="0.0010142" y="0.997727" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="colisor_esquerdo_cafeteria" sid="681333007036761">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="355405324486796">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="889816383257349" speed="5">
+                    <frame duration="1" hotspotX="0.501171" hotspotY="0.501099" original-source="C:\Users\happy\Downloads\Projeto AmongUs\colisor_esquerdo_cafeteria.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.0725995" y="0" />
+                            <point x="0.0749411" y="0.441758" />
+                            <point x="0.550351" y="0.894506" />
+                            <point x="1" y="0.894506" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="colisor_direito_cafeteria" sid="732814966056349">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="845275646843035">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="477752146621060" speed="5">
+                    <frame duration="1" hotspotX="0.501149" hotspotY="0.501099" original-source="C:\Users\happy\Downloads\Projeto AmongUs\colisor_direito_cafeteria.png">
+                        <collision-poly>
+                            <point x="0.457472" y="0.89011" />
+                            <point x="0.934483" y="0.423077" />
+                            <point x="0.937931" y="0" />
+                            <point x="1" y="0.0021978" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.00229885" y="0.892308" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="colisor_mesa_centro_cafeteria" sid="585221045519286">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="350563439681409">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="178355540392118" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\happy\Downloads\Projeto AmongUs\colisor_mesa.png">
+                        <collision-poly>
+                            <point x="0.125" y="0.157895" />
+                            <point x="0.5" y="0" />
+                            <point x="0.870833" y="0.163158" />
+                            <point x="1" y="0.5" />
+                            <point x="0.8625" y="0.826316" />
+                            <point x="0.5" y="1" />
+                            <point x="0.133333" y="0.831579" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="colisor_mesa4_cafeteria" sid="622253282951270">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="964546930676310">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="883147669420954" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\happy\Downloads\Projeto AmongUs\colisor_mesa.png">
+                        <collision-poly>
+                            <point x="0.125" y="0.157895" />
+                            <point x="0.5" y="0" />
+                            <point x="0.870833" y="0.163158" />
+                            <point x="1" y="0.5" />
+                            <point x="0.8625" y="0.826316" />
+                            <point x="0.5" y="1" />
+                            <point x="0.133333" y="0.831579" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="colisor_mesa3_cafeteria" sid="185086063514237">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="989990128321044">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="205665670831745" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\happy\Downloads\Projeto AmongUs\colisor_mesa.png">
+                        <collision-poly>
+                            <point x="0.125" y="0.157895" />
+                            <point x="0.5" y="0" />
+                            <point x="0.870833" y="0.163158" />
+                            <point x="1" y="0.5" />
+                            <point x="0.8625" y="0.826316" />
+                            <point x="0.5" y="1" />
+                            <point x="0.133333" y="0.831579" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="colisor_mesa2_cafeteria" sid="693698193359155">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="405117716670223">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="542591058846152" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\happy\Downloads\Projeto AmongUs\colisor_mesa.png">
+                        <collision-poly>
+                            <point x="0.125" y="0.157895" />
+                            <point x="0.5" y="0" />
+                            <point x="0.870833" y="0.163158" />
+                            <point x="1" y="0.5" />
+                            <point x="0.8625" y="0.826316" />
+                            <point x="0.5" y="1" />
+                            <point x="0.133333" y="0.831579" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="colisor_mesa1_cafeteria" sid="138640656691535">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="941405920996606">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="180896622612792" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\happy\Downloads\Projeto AmongUs\colisor_mesa.png">
+                        <collision-poly>
+                            <point x="0.125" y="0.157895" />
+                            <point x="0.5" y="0" />
+                            <point x="0.870833" y="0.163158" />
+                            <point x="1" y="0.5" />
+                            <point x="0.8625" y="0.826316" />
+                            <point x="0.5" y="1" />
+                            <point x="0.133333" y="0.831579" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="420394170643959">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="379073935033490" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="player" sid="214234376347104">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="8Direction" sid="850443506162980">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="299268078946717">
+                    <behavior id="scrollto" />
+                </behavior-type>
+                <behavior-type name="Wrap" sid="168454487653616">
+                    <behavior id="wrap" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="353590754772770" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504854" original-source="C:\Users\happy\Downloads\Among Us\PC Computer - Among Us - Player Base\Among Us - Player Base\Individual Sprites\idle.png">
+                        <collision-poly>
+                            <point x="0.192308" y="0.825243" />
+                            <point x="0.897436" y="0.825243" />
+                            <point x="0.897436" y="1" />
+                            <point x="0.192308" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="12" loop="0" name="Walk" pingpong="0" repeatcount="1" repeatto="0" sid="374215044732319" speed="12">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504425" original-source="C:\Users\happy\Downloads\Among Us\PC Computer - Among Us - Player Base\Among Us - Player Base\Individual Sprites\Walk\walkcolor0001.png">
+                        <collision-poly>
+                            <point x="0.178571" y="0.752212" />
+                            <point x="0.833333" y="0.752212" />
+                            <point x="0.833334" y="1" />
+                            <point x="0.178571" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504348" original-source="C:\Users\happy\Downloads\Among Us\PC Computer - Among Us - Player Base\Among Us - Player Base\Individual Sprites\Walk\walkcolor0002.png">
+                        <collision-poly>
+                            <point x="0.178571" y="0.73913" />
+                            <point x="0.833333" y="0.73913" />
+                            <point x="0.833333" y="0.982609" />
+                            <point x="0.178571" y="0.982609" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\happy\Downloads\Among Us\PC Computer - Among Us - Player Base\Among Us - Player Base\Individual Sprites\Walk\walkcolor0003.png">
+                        <collision-poly>
+                            <point x="0.178571" y="0.758929" />
+                            <point x="0.833333" y="0.758929" />
+                            <point x="0.833333" y="1" />
+                            <point x="0.178571" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504673" original-source="C:\Users\happy\Downloads\Among Us\PC Computer - Among Us - Player Base\Among Us - Player Base\Individual Sprites\Walk\walkcolor0004.png">
+                        <collision-poly>
+                            <point x="0.178571" y="0.794393" />
+                            <point x="0.833333" y="0.794393" />
+                            <point x="0.833333" y="1" />
+                            <point x="0.178571" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505155" original-source="C:\Users\happy\Downloads\Among Us\PC Computer - Among Us - Player Base\Among Us - Player Base\Individual Sprites\Walk\walkcolor0005.png">
+                        <collision-poly>
+                            <point x="0.197368" y="0.876289" />
+                            <point x="0.921053" y="0.876289" />
+                            <point x="0.921053" y="1" />
+                            <point x="0.197368" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505155" original-source="C:\Users\happy\Downloads\Among Us\PC Computer - Among Us - Player Base\Among Us - Player Base\Individual Sprites\Walk\walkcolor0006.png">
+                        <collision-poly>
+                            <point x="0.197368" y="0.876289" />
+                            <point x="0.921053" y="0.876289" />
+                            <point x="0.921053" y="1" />
+                            <point x="0.197368" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\happy\Downloads\Among Us\PC Computer - Among Us - Player Base\Among Us - Player Base\Individual Sprites\Walk\walkcolor0007.png">
+                        <collision-poly>
+                            <point x="0.192308" y="0.720339" />
+                            <point x="0.897436" y="0.720339" />
+                            <point x="0.897436" y="0.957627" />
+                            <point x="0.192308" y="0.957627" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\happy\Downloads\Among Us\PC Computer - Among Us - Player Base\Among Us - Player Base\Individual Sprites\Walk\walkcolor0008.png">
+                        <collision-poly>
+                            <point x="0.192308" y="0.708333" />
+                            <point x="0.897436" y="0.708333" />
+                            <point x="0.897436" y="0.941667" />
+                            <point x="0.192308" y="0.941667" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504274" original-source="C:\Users\happy\Downloads\Among Us\PC Computer - Among Us - Player Base\Among Us - Player Base\Individual Sprites\Walk\walkcolor0009.png">
+                        <collision-poly>
+                            <point x="0.192308" y="0.726496" />
+                            <point x="0.897436" y="0.726496" />
+                            <point x="0.897436" y="0.965812" />
+                            <point x="0.192308" y="0.965812" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.506494" hotspotY="0.504673" original-source="C:\Users\happy\Downloads\Among Us\PC Computer - Among Us - Player Base\Among Us - Player Base\Individual Sprites\Walk\walkcolor0010.png">
+                        <collision-poly>
+                            <point x="0.194805" y="0.794393" />
+                            <point x="0.909091" y="0.794393" />
+                            <point x="0.909091" y="1" />
+                            <point x="0.194805" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505263" original-source="C:\Users\happy\Downloads\Among Us\PC Computer - Among Us - Player Base\Among Us - Player Base\Individual Sprites\Walk\walkcolor0011.png">
+                        <collision-poly>
+                            <point x="0.197368" y="0.894737" />
+                            <point x="0.921053" y="0.894737" />
+                            <point x="0.921053" y="1" />
+                            <point x="0.197368" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505263" original-source="C:\Users\happy\Downloads\Among Us\PC Computer - Among Us - Player Base\Among Us - Player Base\Individual Sprites\Walk\walkcolor0012.png">
+                        <collision-poly>
+                            <point x="0.197368" y="0.894737" />
+                            <point x="0.921053" y="0.894737" />
+                            <point x="0.921053" y="1" />
+                            <point x="0.197368" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="959169730194818">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Mouse" sid="852440547326128">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="Background" sid="537568090638119">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="alavanca_cafeteria" sid="114148461100583">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="isTriggered" sid="981534936079665" type="boolean" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="134548204172703" speed="5">
+                    <frame duration="1" hotspotX="0.516129" hotspotY="0.5" original-source="C:\Users\happy\Downloads\AmongUs\AmongUs\Cafeteria.png">
+                        <collision-poly>
+                            <point x="0" y="0.28" />
+                            <point x="0.967742" y="0.02" />
+                            <point x="0.967742" y="1" />
+                            <point x="0.967742" y="1" />
+                            <point x="0.967742" y="1" />
+                            <point x="0.967742" y="1" />
+                            <point x="0.967742" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Glow" pingpong="0" repeatcount="1" repeatto="0" sid="351480023845717" speed="5">
+                    <frame duration="1" hotspotX="0.484848" hotspotY="0.490196" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="task_garbage_cafeteria" sid="302265378428292">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="260035197624014" speed="5">
+                    <frame duration="1" hotspotX="0.500982" hotspotY="2.01378" original-source="C:\Users\happy\Downloads\AmongUs\AmongUs\EmptyGarbage.png">
+                        <collision-poly>
+                            <point x="0.00589391" y="0.00590551" />
+                            <point x="0.998035" y="0.00393701" />
+                            <point x="0.921415" y="1" />
+                            <point x="0.59332" y="1" />
+                            <point x="0.500982" y="1" />
+                            <point x="0.043222" y="1" />
+                            <point x="0.6778" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="base_alavanca_task" sid="889522842371858">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="308249036561214" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\happy\Downloads\AmongUs\AmongUs\EmptyGarbage.png">
+                        <collision-poly>
+                            <point x="0.00877193" y="0" />
+                            <point x="0" y="0.87931" />
+                            <point x="1" y="0.844828" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="sombra_task" sid="682175733978553">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="719177595639077" speed="5">
+                    <frame duration="1" hotspotX="0.498551" hotspotY="0.5" original-source="C:\Users\happy\Downloads\AmongUs\AmongUs\EmptyGarbage.png">
+                        <collision-poly>
+                            <point x="0.0142582" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.99789" />
+                            <point x="1" y="0.99789" />
+                            <point x="0.0957527" y="0.99789" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="alavanca_task" sid="319259638029339">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="268481256838987" speed="5">
+                    <frame duration="1" hotspotX="0.504425" hotspotY="0.989362" />
+                </animation>
+                <animation framecount="5" loop="0" name="Movement" pingpong="0" repeatcount="1" repeatto="0" sid="444675542122472" speed="10">
+                    <frame duration="1" hotspotX="0.504425" hotspotY="0.989362" original-source="C:\Users\happy\Downloads\AmongUs\AmongUs\EmptyGarbage.png" />
+                    <frame duration="1" hotspotX="0.504425" hotspotY="0.986301" original-source="C:\Users\happy\Downloads\AmongUs\AmongUs\EmptyGarbage.png">
+                        <collision-poly>
+                            <point x="0.00884956" y="0.0136986" />
+                            <point x="1" y="0.0136986" />
+                            <point x="1" y="0.0136986" />
+                            <point x="1" y="0.863014" />
+                            <point x="0.30885" y="1" />
+                            <point x="0.00884956" y="1" />
+                            <point x="1" y="0.0136986" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504425" hotspotY="0.512821" original-source="C:\Users\happy\Downloads\AmongUs\AmongUs\EmptyGarbage.png">
+                        <collision-poly>
+                            <point x="0.00884956" y="0.0729783" />
+                            <point x="1" y="0.0729783" />
+                            <point x="1" y="0.0729783" />
+                            <point x="1" y="0.0729783" />
+                            <point x="1" y="1" />
+                            <point x="0.00884956" y="1" />
+                            <point x="1" y="0.0729783" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504425" hotspotY="0.0136986">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="0" />
+                            <point x="0.3" y="0" />
+                            <point x="1" y="0.333333" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504425" hotspotY="0.0106383" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite5" sid="421296093140570">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="408147963892585" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="folha" sid="647574861444361">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="166706949128443">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="315136167601586" speed="5">
+                    <frame duration="1" hotspotX="0.408163" hotspotY="0.496063" original-source="C:\Users\happy\Downloads\AmongUs\AmongUs\EmptyGarbage.png">
+                        <collision-poly>
+                            <point x="0.408163" y="0.15748" />
+                            <point x="0.489796" y="0.125984" />
+                            <point x="0.607143" y="0.155512" />
+                            <point x="0.785714" y="0.494094" />
+                            <point x="0.653061" y="0.720472" />
+                            <point x="0.5" y="0.773622" />
+                            <point x="0.346939" y="0.866142" />
+                            <point x="0.0816327" y="0.496063" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="base" sid="698676458368885">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="848618345603592">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="681471846858201" speed="5">
+                    <frame duration="1" hotspotX="0.498551" hotspotY="-7.25">
+                        <collision-poly>
+                            <point x="0.00289855" y="0.875" />
+                            <point x="0.00289855" y="0.249997" />
+                            <point x="0.997101" y="0.249995" />
+                            <point x="0.997101" y="0.875" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="base2" sid="835713870710642">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="787302695306419">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="877896401926604" speed="5">
+                    <frame duration="1" hotspotX="0.498551" hotspotY="-7.25">
+                        <collision-poly>
+                            <point x="0.00289855" y="0.875" />
+                            <point x="0.00289855" y="0.249997" />
+                            <point x="0.997101" y="0.249995" />
+                            <point x="0.997101" y="0.875" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="colisor_lateral_task_lixo" sid="205725406186258">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="832185084289126">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="868656965016784" speed="5">
+                    <frame duration="1" hotspotX="12.6" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.1" y="0.00396825" />
+                            <point x="1" y="0.00396825" />
+                            <point x="1" y="0.996032" />
+                            <point x="0.1" y="0.996032" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tarefa_completa_message" sid="389927259501668">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite3" sid="328105558320587">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="865783595545958" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="folha2" sid="191974602773146">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="750947755260271">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="109238540627489" speed="5">
+                    <frame duration="1" hotspotX="0.510204" hotspotY="0.503937" original-source="C:\Users\happy\Downloads\Projeto AmongUs\folha.png">
+                        <collision-poly>
+                            <point x="0.408163" y="0.15748" />
+                            <point x="0.489796" y="0.125984" />
+                            <point x="0.77551" y="0.0866142" />
+                            <point x="0.979592" y="0.496063" />
+                            <point x="0.489796" y="0.80315" />
+                            <point x="0.489796" y="0.96063" />
+                            <point x="0.346939" y="0.866142" />
+                            <point x="0.0816327" y="0.496063" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="base_folhas" sid="557933169767880">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="704005868442896">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="271311774336968" speed="5">
+                    <frame duration="1" hotspotX="0.501449" hotspotY="0.5" original-source="C:\Users\happy\Downloads\Projeto AmongUs\base.png">
+                        <collision-poly>
+                            <point x="0.00289855" y="0.125" />
+                            <point x="0.997101" y="0.125" />
+                            <point x="0.997101" y="0.875" />
+                            <point x="0.00289855" y="0.875" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Game.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="10" />
+        <global-instance type="Mouse" uid="11" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
